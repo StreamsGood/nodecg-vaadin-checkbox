@@ -1,0 +1,21 @@
+{
+  "name": "nodecg-vaadin-checkbox",
+  "homepage": "https://github.com/StreamsGood/nodecg-vaadin-checkbox",
+  "version": "1.0.0",
+  "authors": [
+    "Brendan Hagan (haganbmj)"
+  ],
+  "description": "Extends vaadin-checkbox with NodeCG replicant support.",
+  "main": "nodecg-vaadin-checkbox.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#^2.3.1",
+    "vaadin-checkbox": "vaadin/vaadin-checkbox#^1.0.3",
+    "nodecg-replicant": "NodeCGElements/nodecg-replicant#^1.0.1"
+  }
+}

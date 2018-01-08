@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../nodecg-replicant/nodecg-replicant.html">
+<link rel="import" href="../vaadin-checkbox/vaadin-checkbox.html">
+
+<dom-module id="nodecg-vaadin-checkbox">
+	<template><nodecg-replicant replicant-name="[[replicantName]]" replicant-bundle="[[replicantBundle]]" value="{{checked}}"></nodecg-replicant></template>
+
+	<script>
+		(function() {
+			let childTemplate;
+
+			class NodeCGVaadinCheckbox extends Vaadin.CheckboxElement {
+				static get is() {
+					return "nodecg-vaadin-checkbox";
+				}
+
+				static get properties() {
+					return {
+						replicantName: String,
+						replicantBundle: String
+					}
+				}
+
+				static get template() {
+					if (!childTemplate) {
+						childTemplate = Polymer.DomModule.import('nodecg-vaadin-checkbox', 'template');
+						let parentTemplate = document.importNode(Vaadin.CheckboxElement.template.content, true);
+						childTemplate.content.appendChild(parentTemplate);
+					}
+
+					return childTemplate;
+				}
+			}
+
+			customElements.define(NodeCGVaadinCheckbox.is, NodeCGVaadinCheckbox);
+		})();
+	</script>
+</dom-module>
