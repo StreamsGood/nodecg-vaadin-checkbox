@@ -1,5 +1,8 @@
 # nodecg-vaadin-checkbox
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/StreamsGood/nodecg-vaadin-checkbox.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/StreamsGood/nodecg-vaadin-checkbox.svg?branch=master)](https://travis-ci.org/StreamsGood/nodecg-vaadin-checkbox)
+
 ```sh
 bower install StreamsGood/nodecg-vaadin-checkbox --save
 ```
